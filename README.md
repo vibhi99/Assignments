@@ -1,5 +1,5 @@
 # Assignments
-Contains different assignments on MERN.
+Contains different assignments on Node.js
 
 1. Express_crud :- Contains the CRUD API assignment i.e Write a programm  to represnt curd operation.(you can choose the url for the api).
                        And also write a program to demonstrate module exports. 
