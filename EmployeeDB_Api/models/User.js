@@ -11,11 +11,11 @@ const userSchema = new Schema({
     phone:{
         type: String
     },
-    // role:{
-    //     type: String,
-    //     enum: ['user', 'admin'],
-    //     default: 'user'
-    // },
+    role:{
+        type: String,
+        enum: ['basic', 'admin'],
+        default: 'basic'
+    },
     password:{
         type: String
     }
