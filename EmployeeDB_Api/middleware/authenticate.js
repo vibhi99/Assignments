@@ -17,6 +17,21 @@ const authenticate = (req, res, next) =>{
     }
 }
 
+const restrictTO = (roles) =>{
+    return (req, res, next) =>{
+        console.log(req.user)
+        const userRole = req.user.role
+        
+        if(!roles.includes(userRole)){
+            return res.status(401).json("no permission")
+            
+        }else{
+            next()
+        }
+    }
+}
 
 
-module.exports = authenticate
+
+
+module.exports = {authenticate, restrictTO}
