@@ -11,4 +11,5 @@ Contains different assignments on Node.js
 4. EmployeeDB_Api :- A small app Office Employee enrollment with mongodb as database:
                         1. create sign up api and store the data in database with fields name , email, phone, passsword.
                         2. create  a login page, data should be matched from db(use jwt token for session)
-                        3. Only a Logged in user in db can only update , add or delete the details of each employee (the data should be added in a seperate data base , fileds                                  should be name , designation , email, phone, age.                     
+                        3. Only a admin can only update , add or delete the details of each employee (the data should be added in a seperate data base , fileds                                  should be name , designation , email, phone, age. )
+                        4. User can only view his/her details.                    
